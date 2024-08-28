@@ -1,0 +1,176 @@
+The Seeds
+
+NAVBAR:
+Event Personnel Seats Schedule Weather Get Ticket
+
+HERO SECTION:
+The Seeds: Harmony
+Under the Stars
+Join Us for an Enchanting Night of Live Music Under the Startlit Sky.
+23 Days : 17 Hours : 43 Minutes : 06 Seconds
+About Concert
+
+EVENT SECTION:
+Ro-Pop Party
+Ro-Pop Party is a spectacular concert featuring the famous band, The Seeds. Expect high energy and catchy melodies for an unforgettable experience. Rock fans will love the guitars and vocals, while pop fans will enjoy the beats and lyrics. The Seeds will take the audience on a passionate, dynamic musical journey, ensuring a night of entertainment and excitement.
+Kampung Jackloth, Jember
+Slamet Riyadi street No.168, Patrang District
+Sat, 31 August 2024
+21:00 PM
+
+PERSONNEL SECTION:
+Our Personnel
+Raymond | Drummer
+Summer | Vocalist
+Josua | Guitarist
+
+SEATS SECTION:
+Seats
+Rp 100.000
+Rp 250.000
+Rp 175.000
+
+TICKETS SECTION:
+KAMPUNG JACKLOTH
+Slamet Riyadi street, Jember
+August 31, 2024 9 PM
+VIP | PREMIUM | GENERAL
+IDR 250.000 | IDR 175.000 | IDR 100.000
+Buy Ticket
+
+SCHEDULE SECTION:
+21:00 Event Opening
+21:30 Payphone - The Seeds
+21:40 Sugar - The Seeds
+21:50 Sunday Morning - The Seeds
+22:00 Girls Like You - The Seeds
+22:20 Event Closing
+
+WEATHER SECTION:
+Weather Forecast | Saturday, 31 August 2024
+Morning 25° Cloudy
+Afternoon 30° Sunny
+Evening 20° Very Cloudy
+
+CONTACT SECTION:
+Feel free to contact us with any questions.
+
+FOOTER SECTION:
+Event Personnel Seats Tickets Schedule Weather
+© Copyright by The Seeds 2024
+
+BUY TICKET PAGE:
+Harmony under
+The Stars
+23 : 17 : 43 : 06
+VIP seating offers an exclusive and comfortable experience with a strategic location for the best view of the stage. The seats feature extra cushioning, armrests, and more legroom. Food and drink service directly to the seat and exclusive merchandise including t-shirts and posters. You can also meet and take photos with The Seeds, adding to the exclusive value of VIP tickets.
+Premium seating offers comfort with a good view of the stage. The seats are comfortable and there is ample legroom. Premium ticket holders get priority access to the concert area. You can also enjoy food and drink services which are available for purchase near your seat.
+The General's seating at concerts is a standing area providing a live and energetic experience. Spectators can enjoy good views and feel the atmosphere of the event intensely. The absence of chairs allows the audience to move freely and dance during the concert. Public facilities such as toilets and food stands are available to facilitate needs during the event.
+Please fill in your personal details
+
+
+PAYMENT TICKET PAGE
+Payment Instructions
+Thank you for placing your order. Please select one of the following banks to make payment:
+1. Bank Transfer
+BCA: Account Number: [1234 5678 9123], in the Name: The Seeds team &  Bank Code: 014
+Mandiri: Account Number: [1234 5678 9123], in the Name: The Seeds team & Bank Code: 014
+CIMB Niaga: Account Number: [1234 5678 9123], in the Name: The Seeds team & Bank Code: 014
+BRI: Account Number: [1234 5678 9123], in the Name: The Seeds team & Bank Code: 014
+BNI: Account Number: [1234 5678 9123], in the Name: The Seeds team & Bank Code: 014
+
+2. Make a Transfer
+Enter the account number and nominal according to your bill.
+Confirm and complete the transaction.
+
+3. Save Proof of Payment
+Save proof of transfer, then we will send your e-ticket pdf via email.
+
+Payment Details
+Payment Code 
+THSD1234567
+Order date 
+: 02-08-2024 | 12:23
+Ticket Category 
+: VIP
+Quantity 
+: 1
+Sub Total 
+: RP 200,000
+Service Fee 
+: RP 2,500
+Total Payment 
+: RP 202,500
+Upload your Proof of Payment
+If there is an error, immediately contact your bank or our customer support.
+
+MODAL:
+MODAL UPLOAD
+Proof of Payment
+Upload
+
+MODAL SUCCESS UPLOAD
+Successfully Uploaded!
+Thank you, Khairunnisa! Your proof of payment has been uploaded successfully.
+
+Please be patient. Admin will confirm your proof of purchase within 3-5 minutes. Refresh the website regularly for more information.
+
+See you at the concert, and let's have fun together! 🎶✨
+Refresh
+
+MODAL PAYMENT FAILED
+⚠️ Payment Confirmation Failed
+
+Sorry, Khairunnisa! Your payment could not be confirmed by our admin.
+
+Please double check your receipt and ensure all details are correct. If you believe that this is an error, contact our support team for assistance.
+
+We are here to help you get The Seeds concert tickets. Let's solve this problem! 🎶✨
+Contact Admin
+
+MODAL PAYMENT SUCCESS
+🎉 Payment Confirmed Successfully
+
+Thank you, Khairunnisa! Your payment has been successfully confirmed by our admin.
+
+Your ticket for the The Seeds concert is on its way! Please check your email, including the spam or promotions folder, to find your ticket.
+
+We can't wait to see you at the concert! Let's make it a night to remember! 🎶✨
+Download Ticket
+
+PDF TICKET:
+Hi Khairunnisa, here are some important information you need to know:
+
+Date & Time : Saturday, August 31st | 9 PM
+Location        : Kampung Jackloth, Slamet Riyadi street, Jember
+Ticket             : Make sure you bring your physical ticket or e-ticket.
+
+Guidelines:
+Please bring your KTP or other valid ID for verification.
+No prohibited items such as weapons, alcohol, or illegal drugs are allowed.
+Enjoy the concert while respecting other visitors.
+
+Services & Facilities:
+Food court and merchandise are available in the concert area.
+Parking area is in the backyard.
+
+Doors will open at 7 PM. We recommend arriving early to avoid long queues.
+
+See you at the concert, and let's create unforgettable memories together!
+Warm Regards, Concert Organizer Team.
+
+--lightgreen: #80FFDB;
+    --cyan: #64DFDF;
+    --dark: #252525;
+    --white: #FFFFFF;
+    --purple: #6930C3;
+    --black: #000000;
+    --gray: #646262;
+    --yellow: #ffc229;
+    --pink: #ff78c4;
+    --green: #6CEE73;
+    --cyan-transparent: rgba(100, 223, 223, 0.8);
+    --black-transparent: rgba(0, 0, 0, 0.8);
+    --dark-transparent: rgba(15, 15, 16, 0.8);
+    --purple-transparent: rgba(105, 48, 195, 0.8);
+    --white-transparent: rgba(255, 255, 255, 0.8);
