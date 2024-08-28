@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+$LoggedIn = isset($_SESSION['login']);
+
 $ticket = $_GET['ticket'] ?? '';
 
 if (!in_array($ticket, ['general', 'premium', 'vip'])) {
@@ -49,7 +52,17 @@ $id_ticket = "THSD" . $rand;
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-                <a href="./pages/login.php">Login</a>
+
+                <?php
+                if ($LoggedIn) {
+                    // Jika sudah login, tampilkan button Logout
+                    echo '<button class="btn btn-logout" style="background-color: #ff78c4;" onclick="confirmLogout()">Logout</button>';
+                } else {
+                    // Jika belum login, tampilkan button Login
+                    echo '<a href="page/login-regis/login.php" class="btn">Login</a>';
+                }
+                ?>
+
             </div>
 
             <div class="nav-item-mobile">
@@ -100,7 +113,7 @@ $id_ticket = "THSD" . $rand;
                     Weather
                 </div>
 
-                <a href="./pages/login.php">Login</a>
+                <!-- <a href="page/login-regis/login.php">Login</a> -->
                 </div>
             </div>
     </nav>
@@ -272,8 +285,9 @@ $id_ticket = "THSD" . $rand;
                         </div>
 
                         <div class="tickets-body">
-                            <a style="cursor: pointer;" class="buy">Buy Ticket</a>
+                            <a style="cursor: pointer;" class="buy" onclick="handleBuyTicket()">Buy Ticket</a>
                         </div>
+
                     </div>
                     </div>
                 </div>
@@ -437,6 +451,26 @@ $id_ticket = "THSD" . $rand;
             overlay.style.display = 'none';
 
         })
+    </script>
+    <script>
+        // Aksi tombol "Buy Ticket"
+        function handleBuyTicket() {
+            // Periksa apakah pengguna sudah login
+            var LoggedIn = <?php echo json_encode($LoggedIn); ?>;
+
+            if (!LoggedIn) {
+                // Jika belum login, tampilkan alert dan arahkan ke halaman login
+                alert('Anda harus login terlebih dahulu untuk membeli tiket.');
+                window.location.href = 'page/login-regis/login.php';
+            }
+        }
+
+        // Konfirmasi logout
+        function confirmLogout() {
+            if (confirm('Apakah Anda yakin ingin logout?')) {
+                window.location.href = 'root/logout.php';
+            }
+        }
     </script>
 </body>
 </html>

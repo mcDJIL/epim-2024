@@ -1,5 +1,7 @@
 <?php
 
+include "root/conn-check.php";
+
 $id_ticket = $_GET['id-ticket'] ?? '';
 
 ?>
