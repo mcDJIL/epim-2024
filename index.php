@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-
-$LoggedIn = isset($_SESSION['login']);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,16 +40,7 @@ $LoggedIn = isset($_SESSION['login']);
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-
-                <?php
-
-                if ($LoggedIn) {
-                    echo '<a href="#" onclick="confirmLogout(); return false;">Logout</a>';
-                } else {
-                    echo '<a href="pages/login.php">Login</a>';
-                }
-
-                ?>
+                <a href="./pages/login.php">Login</a>
             </div>
 
             <div class="nav-item-mobile">
@@ -579,13 +562,5 @@ $LoggedIn = isset($_SESSION['login']);
     </button>
 
     <script src="./main.js"></script>
-
-    <script>
-        function confirmLogout() {
-            if (confirm('Are u sure to logout?')) {
-                window.location.href = 'backend/logout.php';
-            }
-        }
-    </script>
 </body>
 </html>
