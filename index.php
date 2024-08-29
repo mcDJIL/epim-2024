@@ -1,8 +1,3 @@
-<?php
-session_start();
-$LoggedIn = isset($_SESSION['login']);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,17 +40,7 @@ $LoggedIn = isset($_SESSION['login']);
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-
-                <?php
-                if ($LoggedIn) {
-                    // Jika sudah login, tampilkan button Logout
-                    echo '<button class="btn btn-logout" style="background-color: #ff78c4;" onclick="confirmLogout()">Logout</button>';
-                } else {
-                    // Jika belum login, tampilkan button Login
-                    echo '<a href="page/login-regis/login.php" class="btn">Login</a>';
-                }
-                ?>
-
+                <a href="./pages/login.php">Login</a>
             </div>
 
             <div class="nav-item-mobile">
@@ -577,14 +562,5 @@ $LoggedIn = isset($_SESSION['login']);
     </button>
 
     <script src="./main.js"></script>
-
-    <script>
-        // Konfirmasi logout
-        function confirmLogout() {
-            if (confirm('Apakah Anda yakin ingin logout?')) {
-                window.location.href = 'root/logout.php';
-            }
-        }
-    </script>
 </body>
 </html>

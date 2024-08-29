@@ -1,9 +1,5 @@
 <?php
 
-include "root/conn-check.php";
-
-$LoggedIn = isset($_SESSION['login']);
-
 $id_ticket = $_GET['id-ticket'] ?? '';
 
 ?>
@@ -45,17 +41,7 @@ $id_ticket = $_GET['id-ticket'] ?? '';
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-
-                <?php
-                if ($LoggedIn) {
-                    // Jika sudah login, tampilkan button Logout
-                    echo '<button class="btn btn-logout" style="background-color: #ff78c4;" onclick="confirmLogout()">Logout</button>';
-                } else {
-                    // Jika belum login, tampilkan button Login
-                    echo '<a href="page/login-regis/login.php" class="btn">Login</a>';
-                }
-                ?>
-
+                <a href="./pages/login.php">Login</a>
             </div>
 
             <div class="nav-item-mobile">
@@ -412,14 +398,6 @@ We can't wait to see you at the concert! Let's make it a night to remember! 🎶
 
             window.location.href = './pdf.php?id-ticket=<?= $id_ticket ?>';
         })
-    </script>
-    <script>
-        // Konfirmasi logout
-        function confirmLogout() {
-            if (confirm('Apakah Anda yakin ingin logout?')) {
-                window.location.href = 'root/logout.php';
-            }
-        }
     </script>
 </body>
 </html>
