@@ -1,5 +1,9 @@
 <?php
 
+include "backend/conn_check.php";
+
+$LoggedIn = isset($_SESSION['login']);
+
 $id_ticket = $_GET['id-ticket'] ?? '';
 
 ?>
@@ -41,7 +45,15 @@ $id_ticket = $_GET['id-ticket'] ?? '';
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-                <a href="./pages/login.php">Login</a>
+                <?php
+
+                if ($LoggedIn) {
+                    echo '<a href="#" onclick="confirmLogout(); return false;">Logout</a>';
+                } else {
+                    echo '<a href="pages/login.php">Login</a>';
+                }
+
+                ?>
             </div>
 
             <div class="nav-item-mobile">
@@ -398,6 +410,13 @@ We can't wait to see you at the concert! Let's make it a night to remember! 🎶
 
             window.location.href = './pdf.php?id-ticket=<?= $id_ticket ?>';
         })
+    </script>
+    <script>
+        function confirmLogout() {
+            if (confirm('Apakah Anda yakin ingin logout?')) {
+                window.location.href = 'backend/logout.php';
+            }
+        }
     </script>
 </body>
 </html>

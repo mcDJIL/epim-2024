@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+$LoggedIn = isset($_SESSION['login']);
+
 $ticket = $_GET['ticket'] ?? '';
 
 if (!in_array($ticket, ['general', 'premium', 'vip'])) {
@@ -49,7 +53,15 @@ $id_ticket = "THSD" . $rand;
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-                <a href="./pages/login.php">Login</a>
+                <?php
+
+                if ($LoggedIn) {
+                    echo '<a href="#" onclick="confirmLogout(); return false;">Logout</a>';
+                } else {
+                    echo '<a href="pages/login.php">Login</a>';
+                }
+
+                ?>
             </div>
 
             <div class="nav-item-mobile">
@@ -272,7 +284,7 @@ $id_ticket = "THSD" . $rand;
                         </div>
 
                         <div class="tickets-body">
-                            <a style="cursor: pointer;" class="buy">Buy Ticket</a>
+                            <a style="cursor: pointer;" class="buy" onclick="handleBuyTicket()">Buy Ticket</a>
                         </div>
                     </div>
                     </div>
@@ -437,6 +449,32 @@ $id_ticket = "THSD" . $rand;
             overlay.style.display = 'none';
 
         })
+    </script>
+    <script>
+        // Aksi tombol "Buy Ticket"
+        function handleBuyTicket() {
+            // Periksa apakah pengguna sudah login
+            var LoggedIn = <?php echo json_encode($LoggedIn); ?>;
+
+            if (!LoggedIn) {
+                // Jika belum login, tampilkan alert dan arahkan ke halaman login
+                alert('Anda harus login terlebih dahulu untuk membeli tiket.');
+                window.location.href = 'pages/login.php';
+            } else {
+                // Jika sudah login, tampilkan modal
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+                myModal.show();
+
+                // Kalo pake CSS murni, tinggal panggil showModal()
+            }
+        }
+
+        // Konfirmasi logout
+        function confirmLogout() {
+            if (confirm('Apakah Anda yakin ingin logout?')) {
+                window.location.href = 'backend/logout.php';
+            }
+        }
     </script>
 </body>
 </html>
