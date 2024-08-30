@@ -1,5 +1,9 @@
 <?php
 
+$LoggedIn = isset($_SESSION['login']);
+
+include "backend/conn_check.php";
+
 $id_ticket = $_GET['id-ticket'] ?? '';
 
 ?>

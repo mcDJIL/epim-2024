@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+$LoggedIn = isset($_SESSION['login']);
+
 $ticket = $_GET['ticket'] ?? '';
 
 if (!in_array($ticket, ['general', 'premium', 'vip'])) {
@@ -49,7 +53,13 @@ $id_ticket = "THSD" . $rand;
 
             <div class="nav-button">
                 <button class="btn-tickets">Get Ticket</button>
-                <a href="./pages/login.php">Login</a>
+                <?php
+                if($LoggedIn) {
+                    echo '<a href="#" onclick="confirmLogout(); return false;">Logout</a>';
+                } else {
+                    echo '<a href="pages/login.php">Login</a>';
+                }
+                ?>
             </div>
 
             <div class="nav-item-mobile">
@@ -100,7 +110,14 @@ $id_ticket = "THSD" . $rand;
                     Weather
                 </div>
 
-                <a href="./pages/login.php">Login</a>
+                <?php
+                if($LoggedIn) {
+                    '<a href="#" onclick="confirmLogout(); return false;">Logout</a>';
+                } else {
+                    '<a href="pages/login.php">Login</a>';
+                }
+                ?>
+                
                 </div>
             </div>
     </nav>
@@ -272,7 +289,7 @@ $id_ticket = "THSD" . $rand;
                         </div>
 
                         <div class="tickets-body">
-                            <a style="cursor: pointer;" class="buy">Buy Ticket</a>
+                            <a style="cursor: pointer;" class="buy" onclick="handleBuyTicket()">Buy Ticket</a>
                         </div>
                     </div>
                     </div>
@@ -438,5 +455,24 @@ $id_ticket = "THSD" . $rand;
 
         })
     </script>
+    <script>
+        function handleBuyTicket() {
+            var LoggedIn = <?php echo json_encode($LoggedIn); ?>;
+
+            if (!LoggedIn) {
+                alert('You must login before buy a ticket!');
+                window.location.href = 'pages/login.php';
+            } else {
+
+            }
+        }
+    </script>
+    <script>
+        function confirmLogout() {
+            if (confirm('You sure to logout?')) {
+                window.location.href = 'backend/logout.php';
+            }
+        }
+    </script> 
 </body>
 </html>
